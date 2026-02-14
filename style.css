@@ -1,0 +1,181 @@
+html { scroll-behavior: smooth;}
+
+body,h1,h2,p,ul {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: aliceblue;
+    color: darkslategrey;
+}
+
+/*navigation*/
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: blue;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+}
+
+.logo { 
+    font-size:22px;
+font-weight:bold;
+}
+
+
+.nav-links a   { 
+   text-decoration:none;
+   color:white;
+   font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: teal;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    background: Linear-gradient(to bottom right, blue, teal);
+    color:white;
+
+}
+
+.hero-content h1 {
+    font: size 48px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size:18px;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: lightseagreen;
+}
+
+.hero-btn{
+    display:inline-block;
+    background: white;
+    color:teal;
+    padding:12px 25px;
+    border-radius:6px;
+    font-weight: bold;
+}
+
+.hero-btn:hover{
+    background: lightaeagreen;
+    color: white;
+}
+
+.animation-fade {
+    animation:fadeIn 2s ease forwarss 0.5s;
+    opacity:0;
+}
+
+@keyframes SlideDown {
+    0% {opacity: 0; transform:translateY(-20px);}
+    100% {opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeIN {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.section{
+    max-width: 750px;
+    background: white;
+    padding:35px 20px;
+    margin:50px auto;
+    border: radius 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.section h2 {
+    text-align:center;
+    color:blue;
+    margin-bottom: 20px;
+}
+
+ .project-list {
+    list-style:none;
+    padding: 0;
+
+ }
+
+ .project-list li {
+    background: lightcyan;
+    margin:10px auto;
+    padding: 12px;
+    width: 75%;
+    text-align:center;
+    border-radius: 6px;
+ }
+
+ .contact-form {
+    display:flex;
+    flex-direction: coloum;
+    gap:15px
+ }
+
+ .contact-form input, contact-form textarea {
+    padding:12px;
+    border:1px solid lighgrey;
+    border-radius:6px;
+    width:100%;
+    font-size:15px;
+ }
+
+ .contact-form button {
+    background:teal;
+    color:white;
+    padding: 12px;
+    border: none;
+    border-radius:6px;
+    font-size: 16px;
+    cursor: pointer;
+ }
+
+ .contact-form button:hover{ background: lightseagreen;
+}
+
+footer {
+    background:blue;
+    color: white;
+    text-align:center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media (max-width:768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .subtitle{ font-size:15px;
+    }
+
+    .project-lists li { width:90%}
+
+}
+
+#navbar {
+    flex-direction: column;
+    text-align:center;
+}
+
+
