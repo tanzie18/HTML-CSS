@@ -1,0 +1,150 @@
+body{
+    margin:0;
+    font-family; Arial, sans-serif;
+    background: aliceblue;
+    scroll-behavior: Smooth;
+    color: Darkblue;
+}
+
+.navbar {
+    display:flex;
+    
+    padding: 15px 30px;
+    background: #0077b6;
+    align-items: center;
+    color:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:10;
+}
+
+.navlinks {
+    list-style:none;
+    display:flex;
+    gap:10px;
+    margin:0;
+    padding: 0;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:turquoise;
+}
+
+.hero {
+    height:100vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding top:80px;
+}
+
+.title { 
+    font-size:18px;
+    margin-bottom:25px;
+    
+}
+
+.subtitle{
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+
+.hero-btn{
+    background:#00b4d8;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    
+    
+}
+.hero-btn:hover {
+    background:#90e0ef;
+    color:#00334d;
+}
+
+.section{
+    background: white;
+    margin: 50px auto;
+    padding: 40px 20px;
+    max-width: 1000px;
+    border-radius:10px;
+    text-align: center;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+>.menu-grid{
+
+    display:grid;
+    grid-template-columns: repeat (auto-fit, minmax(260px, 1fr));
+    gap:20px; 
+}
+
+.menu-card{
+    background: #e0f7ff;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.menu-card:hover{
+    transform: translateY (-5px);
+}
+
+.menu-card img{
+    width:100%;
+    max-height:300px;
+    object-fit:contain;
+    border-radius:10px;
+    background:white;
+}
+
+.about-img{
+    width:350px;
+    height:280px;
+    object-fit: cover;
+    border-radius:8px;
+    margin: 0 auto 15px;
+    
+    display: block;
+
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background: #0077b6;
+    color:white;
+    margin-top:40px;
+}
+
+@media (max-width:768px) {
+    .title {font-size:32px;}
+
+    .navbar {flex-direction:column;
+    text-align:center;}
+
+    .nav-links {flex-direction:column;
+    gap:10px;}
+}
