@@ -1,0 +1,166 @@
+/* COLORS */
+:root {
+    --primary: rgb(255, 60, 0);
+    --dark:black;
+    --light: white;
+    --gray: #f4f4f4;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* NAVBAR */
+.navbar {
+    background: var(--dark);
+    color: var(--light);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
+    text-align: left;
+    display:flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--primary);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light);
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    background: var(--primary);
+    color: var(--light);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ff5c2a;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.dark {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--gray);
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.dark .card {
+    background: #222;
+}
+
+.price-tag {
+    font-size: 22px;
+    color: var(--primary);
+    margin: 15px 0;
+}
+
+.price button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.featured {
+    border: 2px solid var(--primary);
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
